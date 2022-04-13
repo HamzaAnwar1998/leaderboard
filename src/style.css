@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper{
@@ -13,7 +16,7 @@
 
 .score-and-form-box{
     width: 100%;
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -21,6 +24,23 @@
 .score-and-form-box .score-box{
     flex: 1;
     margin-right: 15px;
+}
+
+.score-and-form-box .score-box .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-and-form-box .score-box .scores{
+    margin-top: 20px;
+}
+
+.score-and-form-box .score-box .scores .score{
+    padding: 10px;
+}
+
+.score-and-form-box .score-box .scores .score:nth-child(even){
+    background-color: #e4e4e4;
 }
 
 .score-and-form-box .form-box{
@@ -31,38 +51,9 @@
     align-items: center;
 }
 
-.score-and-form-box .score-box .head{
-    display: flex;
-    justify-content: space-between;
-}
-
-.score-and-form-box .score-box .scores{
-    list-style: none;
-    border: 1px solid #b3b1b1;
-    margin-top: 15px;
-}
-
-.score-and-form-box .score-box .scores .score{
-    margin: 10px 0;
-    padding: 10px;
-}
-
-.score-and-form-box .score-box .scores .score:nth-child(even){
-    background-color: #e4e4e4;
-}
-
 .form{
-    width: 300px;
-}
-
-.custom-inputs{
-    width: 100%;
-    height: 40px;
-    outline: none;
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-indent: 3px;
-    padding: 3px;
+    width: 350px;
+    margin-top: 10px;
 }
 
 .btn-div{

@@ -1,5 +1,6 @@
 import './style.css';
 import leaderboard from './modules/handleAPI.js';
+import 'bootstrap/dist/css/bootstrap.css';
 
 // getting elements
 const ul = document.getElementById('ul');
@@ -11,7 +12,7 @@ const userscore = document.getElementById('userscore');
 document.getElementById('refresh').addEventListener('click', async () => {
   const data = await leaderboard.listScores();
   data.result.forEach((individualData) => {
-    ul.innerHTML += `<li class="score">
+    ul.innerHTML += `<li class="score list-group-item">
     <span>${individualData.user}:${individualData.score}</span>
     </li>`;
   });
