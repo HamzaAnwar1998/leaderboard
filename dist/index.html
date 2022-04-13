@@ -8,7 +8,30 @@
 <script defer src="main.js"></script></head>
 <body>
     <main class="wrapper">
-        Leaderboard
+        <h1>Leaderboard</h1>
+        <section class="score-and-form-box">
+            <div class="score-box">
+                <div class="head">
+                    <h3>Recent scores</h3>
+                    <button class="refresh-btn" id="refresh">Refresh</button>
+                </div>
+                <ul class="scores" id="ul">
+                    
+                </ul>
+            </div>
+            <div class="form-box">
+                <h3>Add your score</h3>
+                <form class="form" autocomplete="off">
+                    <input class="custom-inputs" id="username" type="text" placeholder="Your Name" required>
+                    <br>
+                    <input class="custom-inputs" id="userscore" type="text" placeholder="Your Score" required>
+                    <br>
+                    <div class="btn-div">
+                        <button class="submit-btn" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
