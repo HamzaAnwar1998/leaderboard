@@ -12,15 +12,17 @@ The leaderboard website displays scores submitted by different players. It also 
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-This project is dependent on some dev packages. You need to install these packages in your local project environment to get the most of this project.
+Clone the repo using git clone https://github.com/HamzaAnwar1998/leaderboard.git
 
 ### Install
-Run 'npm install' in your code terminal to install the packages.
+This project is dependent on some dev packages and webpack. You need to install these packages in your local project environment to get the most of this project.
+
+Run 'npm install' in your code terminal to install the packages. It will also install the webpack CLI.
 
 ### Usage
 - Use "npm run build" to compile the webpack.
 
-- Use "npm run dev to" start the local server.
+- Use "npm start" to start the app in local server.
 
 # Authors
 
